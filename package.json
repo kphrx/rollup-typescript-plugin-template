@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "prepare": "npm run build",
+    "prepack": "tsc --build --clean"
   },
   "repository": {
     "type": "git",
